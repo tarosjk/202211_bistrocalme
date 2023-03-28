@@ -49,3 +49,6 @@ wp-config.php
 
 #otheres
 .DS_Store
+
+# remove sass from git
+/wp-content/themes/bistro-calme/assets/sass
