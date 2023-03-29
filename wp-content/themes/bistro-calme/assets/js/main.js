@@ -1,5 +1,6 @@
 jQuery(function($) {
     // Navi
+    
     var $menu = $('.header_menu');
     var $slideNav = $('.header_links');
     $menu.on('click', function() {
