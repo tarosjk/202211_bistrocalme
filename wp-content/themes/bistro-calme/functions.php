@@ -3,6 +3,7 @@
 // titleタグを出力する
 add_theme_support('title-tag');
 add_theme_support('post-thumbnails');
+add_theme_support('menus');
 
 
 // add_filter('フック名', '自分の関数名');
