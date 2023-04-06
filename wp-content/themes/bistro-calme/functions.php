@@ -25,3 +25,25 @@ function my_document_title_parts($title) {
   
   return $title;
 }
+
+
+add_action('pre_get_posts', 'my_pre_get_posts');
+function my_pre_get_posts($query) {
+  if( is_admin() || !$query->is_main_query() ) {
+    return;
+  }
+
+  if( $query->is_home() ) {
+    $query->set('posts_per_page', 3);
+    // $query->set('cat', 1);
+    return;
+  }
+}
+
+
+add_action('wp', 'my_wpautop');
+function my_wpautop(){
+  if (is_page('contact')) {
+    remove_filter('the_content', 'wpautop');
+  }
+}
