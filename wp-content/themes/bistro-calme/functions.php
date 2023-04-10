@@ -40,10 +40,15 @@ function my_pre_get_posts($query) {
   }
 }
 
-
 add_action('wp', 'my_wpautop');
 function my_wpautop(){
   if (is_page('contact')) {
     remove_filter('the_content', 'wpautop');
   }
+}
+
+add_action('after_setup_theme', 'my_editor_support');
+function my_editor_support(){
+  add_theme_support('editor-styles');
+  add_editor_style('assets/css/editor-style.css');
 }
