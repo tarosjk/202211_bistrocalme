@@ -53,3 +53,5 @@ wp-config.php
 # remove sass from git
 /wp-content/themes/bistro-calme/assets/sass
 /wp-content/plugins
+*.wpress
+**/ai1wm-backups/**

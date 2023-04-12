@@ -7,7 +7,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link href="<?= get_template_directory_uri(); ?>/assets/css/styles.min.css" rel="stylesheet">
 
-  <?php
+	<?php
 	wp_enqueue_style(
 		'font-awesome',
 		'https://use.fontawesome.com/releases/v5.6.1/css/all.css'
@@ -17,7 +17,7 @@
 		'bistro-calme-main',
 		get_template_directory_uri() . '/assets/js/main.js',
 		['jquery'],
-		filemtime( get_template_directory() . '/assets/js/main.js' ),
+		filemtime(get_template_directory() . '/assets/js/main.js'),
 		true
 	);
 	wp_enqueue_script('jquery');
@@ -57,8 +57,7 @@
 			</ul>
 		</div>
 
-		<svg class="header_menu" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-			width="30" height="30" viewBox="0 0 30 30">
+		<svg class="header_menu" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="30" height="30" viewBox="0 0 30 30">
 			<defs>
 				<clipPath id="clip-path">
 					<rect width="30" height="30" fill="none" />
