@@ -30,7 +30,7 @@
 	<header class="header">
 		<div class="header_inner">
 			<div class="header_logo">
-				<h1><a href="<?= home_url(); ?>"><img src="<?= get_template_directory_uri(); ?>/assets/img/common/logo@2x.png" alt="BISTRO CALME"></a></h1>
+				<h1><a href="<?= home_url(); ?>"><img src="<?= get_template_directory_uri(); ?>/assets/img/common/logo@2x.png" alt="<?php bloginfo('name'); ?>"></a></h1>
 			</div>
 
 			<div class="header_desc">

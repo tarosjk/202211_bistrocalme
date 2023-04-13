@@ -55,3 +55,4 @@ wp-config.php
 /wp-content/plugins
 *.wpress
 **/ai1wm-backups/**
+**/siteguard/**
