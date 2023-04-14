@@ -23,6 +23,26 @@
 						<div class="article_body">
 							<div class="content">
 								<?php the_content(); ?>
+								<?php 
+								$artist_names = get_post_meta(get_the_ID(), 'artist-name');
+								// var_dump($artist_names[0]);
+								foreach($artist_names as $name) {
+									echo $name;
+								}
+								?>
+								<div>
+									<p><?= SCF::get('artist'); ?></p>
+									<p><?= SCF::get('label'); ?></p>
+									<p>
+									<?php
+										$img_id = SCF::get('jacket');
+										$img_url = wp_get_attachment_url($img_id);
+										var_dump(wp_get_attachment_image_src($img_id, 'medium'));
+									?>
+									<img src="<?= $img_url; ?>" alt="">
+									</p>
+									<p><?= SCF::get('release-date'); ?></p>
+								</div>
 							</div>
 						</div>
 

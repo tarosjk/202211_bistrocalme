@@ -56,3 +56,7 @@ wp-config.php
 *.wpress
 **/ai1wm-backups/**
 **/siteguard/**
+**/ewww/**
+wp-content/cache
+advanced-cache*
+wp-cache-config*
